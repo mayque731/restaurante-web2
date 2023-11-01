@@ -2,7 +2,7 @@ const express = require("express");
 const mysql = require("mysql");
 const path = require("path");
 
-//configurando o ambiente
+//configurando o ambiente teste
 
 const app = express();
 
