@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Caveat;
+  src: url("./fonts/Caveat-Regular.ttf");
+}
+
+body {
+  background-color: #014034 !important;
+  width: 100vw;
+  height: 100vh;
+}
