@@ -32,14 +32,77 @@
       class="bg-light rounded-bottom rounded-end p-4"
       style="width: 100%; height: calc(100% - 12%)"
     >
-    <button type="button" class="btn btn-success">Add Produto</button>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ProdutoModal">Add Produto</button>
     <br></br>
-      <div class="card border-2" style="width: 100%; min-height: 200px">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Quant. Est.</th>
+            <th scope="col">Valor Uni.</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Coca Cola 2l</th>
+            <td>50</td>
+            <td>R$ 7,00</td>
+            <td>
+                <button type="button" class="btn btn-warning">Editar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Picanha</th>
+            <td>20</td>
+            <td>R$ 60,00</td>
+            <td>
+                <button type="button" class="btn btn-warning">Editar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
         
       </div>
       
     </div>
-
+<!-- inicio modal -->
+<div class="modal fade" id="ProdutoModal" tabindex="-1" aria-labelledby="ProdutoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Produto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nome do produto:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Quantidade em estoque:</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Valor unitario:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+                      <button type="button" class="btn btn-success">Salvar</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fim modal -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
