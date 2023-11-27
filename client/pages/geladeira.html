@@ -49,18 +49,8 @@
             <td>50</td>
             <td>R$ 7,00</td>
             <td>
-                <button type="button" class="btn btn-warning">Editar</button>
-                <button type="button" class="btn btn-danger">Excluir</button>
-            </td>
-          </tr>
-
-          <tr>
-            <th>Picanha</th>
-            <td>20</td>
-            <td>R$ 60,00</td>
-            <td>
-                <button type="button" class="btn btn-warning">Editar</button>
-                <button type="button" class="btn btn-danger">Excluir</button>
+                <button type="button" class="btn btn-warning" onclick="editarItem()">Editar</button>
+                <button type="button" class="btn btn-danger" onclick="excluirItem()">Excluir</button>
             </td>
           </tr>
         </tbody>
@@ -81,22 +71,22 @@
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nome do produto:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name"  class="col-form-label">Nome do produto:</label>
+              <input type="text" id="nomeProduto" class="form-control" id="recipient-name">
             </div>
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Quantidade em estoque:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name"  class="col-form-label">Quantidade em estoque:</label>
+              <input type="text" id="quantidadeProduto" class="form-control" id="recipient-name">
               
             </div>
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Valor unitario:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name"  class="col-form-label">Valor unitario:</label>
+              <input type="text" id="valorProduto" class="form-control" id="recipient-name">
             </div>
           </form>
         </div>
         <div class="modal-footer">
-                      <button type="button" class="btn btn-success">Salvar</button>
+                      <button type="button" class="btn btn-success" onclick="salvarProduto()">Salvar</button>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
         </div>
       </div>
